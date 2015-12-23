@@ -1,0 +1,53 @@
+$break-small: 440px;
+$break-mid: 600px;
+$break-large: 800px;
+
+body {
+  background-color: #2AAADD;
+  color: #fff;
+  font-family: Raleway, verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  transition: all 150ms 150ms;
+  .altschool_logo {
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+  	@media screen and (min-width: $break-large) {
+    	transform: scale(2,2);
+    	left: 44%;
+    }
+
+  	.alt_icon {
+  		font-weight: 700;
+    	color: #2AAADD;
+	    background-color: #fff;
+	    padding: 21px 3px 0px 17px;
+	    border-radius: 6px;
+  	}
+  	.school_txt {
+  		font-weight: 300;
+  		margin-left: -3px;
+
+  		@media screen and (max-width: $break-small) {
+	    	display: none;
+	    }
+  	}
+  }
+  .logo_sm {
+  	display: none;
+  	.altschool_sm {
+  	  font-size: 22px;
+  	  font-weight: 300;
+    }
+  }
+}
+
